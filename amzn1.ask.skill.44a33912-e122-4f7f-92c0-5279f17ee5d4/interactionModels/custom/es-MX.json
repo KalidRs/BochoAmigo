@@ -1,0 +1,110 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "destino",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "hora",
+              "type": "AMAZON.TIME"
+            },
+            {
+              "name": "pasajero",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "nombre_conductor",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "CrearViajeIntent",
+          "samples": [
+            "crea un viaje a {destino} a las {hora} para {pasajero} con el conductor {nombre_conductor}",
+            "agrega un viaje a {destino} con el conductor {nombre_conductor} para {pasajero} a las {hora}",
+            "quiero registrar un viaje a {destino} para {pasajero}",
+            "añade un viaje a {destino} a las {hora}",
+            "registra un viaje con el conductor {nombre_conductor}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ListarViajesIntent",
+          "samples": [
+            "qué viajes hay",
+            "muéstrame los viajes",
+            "qué viajes están activos",
+            "listar viajes",
+            "cuáles son los viajes",
+            "dime los viajes"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "destino",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "pasajero",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "EliminarViajeIntent",
+          "samples": [
+            "elimina el viaje a {destino} de {pasajero}",
+            "borra el viaje a {destino} de {pasajero}",
+            "cancela el viaje a {destino} para {pasajero}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "destino",
+              "type": "AMAZON.City"
+            },
+            {
+              "name": "pasajero",
+              "type": "AMAZON.FirstName"
+            },
+            {
+              "name": "hora",
+              "type": "AMAZON.TIME"
+            },
+            {
+              "name": "nombre_conductor",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "EditarViajeIntent",
+          "samples": [
+            "edita el viaje a {destino} de {pasajero} a las {hora}",
+            "cambia el conductor del viaje a {destino} de {pasajero} a {nombre_conductor}",
+            "actualiza el viaje a {destino} para {pasajero} con el conductor {nombre_conductor}"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "bocho amigo"
+    }
+  }
+}
